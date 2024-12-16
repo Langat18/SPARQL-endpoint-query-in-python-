@@ -1,0 +1,1294 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.schools.com/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.schools.com/ontology">
+    <Prefix name="" IRI="http://www.schools.com/ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Academic_Policies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Academics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Admission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumni_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumni_Membership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumni_Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attendance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Budget"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buildings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Career_Services"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Class_Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classroom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clubs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Community_Partnerships"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conduct_Policies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Counselling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emergency_Protocols"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee_Records"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exam_Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expenses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extracurricular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fee_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financial_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_and_Safety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IT_Equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library_Membership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library_Resources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Records"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent_Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Partner_Institutions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Policies_and_Procedures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recruitment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School_Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sport_Facilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type_of_Fee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volunteer_Programs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Teaches"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allocatesBidgetFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsPolicy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedbackFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSchedule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hostsEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAvailableFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEmployedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupervisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managesAdmissionsFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mentors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#offersInternshipsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatesSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partnersWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesCounsellingFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sendsNotificationTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usesFacility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Payment_status_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sport_Facilities_1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Class_schedule_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#School_Bus_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Class_schedule_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Conduct_Policies_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Medical_Records_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teacher_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teacher_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Admission_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Membership_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Exam_Schedule_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Library_Resource_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clubs_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Software_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Counselling_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parent_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Facility"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_2"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attendance_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recruitment_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buildings_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Facility_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type_of_fee_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sport_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subject_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subject_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Parent_event_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emergency_Protocols_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Volunteer_Programs_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Route_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Classroom_Type_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Notification_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#School_event_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Library_Membership_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Expenses_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Partnership_Institution_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carreer_services_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_Records_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grade_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Grade_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Budget_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IT_equipment_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Academic_Policies_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Staff_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Staff_2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EnrolledIn"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Academic_Policies"/>
+        <Class IRI="#Policies_and_Procedures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Admission"/>
+        <Class IRI="#Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alumni_Event"/>
+        <Class IRI="#Alumni_Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alumni_Membership"/>
+        <Class IRI="#Alumni_Network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attendance"/>
+        <Class IRI="#Administration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Budget"/>
+        <Class IRI="#Financial_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buildings"/>
+        <Class IRI="#Facilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Career_Services"/>
+        <Class IRI="#Student_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Class_Schedule"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clubs"/>
+        <Class IRI="#Extracurricular"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conduct_Policies"/>
+        <Class IRI="#Policies_and_Procedures"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Counselling"/>
+        <Class IRI="#Student_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <Class IRI="#Academics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emergency_Protocols"/>
+        <Class IRI="#Health_and_Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee_Records"/>
+        <Class IRI="#Human_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exam_Schedule"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expenses"/>
+        <Class IRI="#Financial_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Facility"/>
+        <Class IRI="#Classroom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#Parent_Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grade"/>
+        <Class IRI="#Academics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IT_Equipment"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Library_Membership"/>
+        <Class IRI="#Library"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Library_Resources"/>
+        <Class IRI="#Library"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Records"/>
+        <Class IRI="#Health_and_Safety"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notification"/>
+        <Class IRI="#Parent_Communication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent_Event"/>
+        <Class IRI="#Event_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Partner_Institutions"/>
+        <Class IRI="#Community_Partnerships"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment_Status"/>
+        <Class IRI="#Fee_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recruitment"/>
+        <Class IRI="#Human_Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Route"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School_Bus"/>
+        <Class IRI="#Transportation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School_Event"/>
+        <Class IRI="#Event_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sport_Facilities"/>
+        <Class IRI="#Facilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="#Extracurricular"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subject"/>
+        <Class IRI="#Academics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teacher"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type"/>
+        <Class IRI="#Classroom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type_of_Fee"/>
+        <Class IRI="#Fee_Management"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volunteer_Programs"/>
+        <Class IRI="#Community_Partnerships"/>
+    </SubClassOf>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EnrolledIn"/>
+        <NamedIndividual IRI="#Student_1"/>
+        <NamedIndividual IRI="#Course_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EnrolledIn"/>
+        <NamedIndividual IRI="#Student_2"/>
+        <NamedIndividual IRI="#Course_2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Academic_Policies_1"/>
+        <Literal>ACP1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Academic_Policies_1"/>
+        <Literal>All learners should declare all their hostels from the portal.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Admission_1"/>
+        <Literal>ADM1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Admission_1"/>
+        <Literal>January</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Attendance_1"/>
+        <Literal>ATT1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Attendance_1"/>
+        <Literal>Full Attendance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Budget_1"/>
+        <Literal>BG1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Budget_1"/>
+        <Literal>Sporting Budget</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Buildings_1"/>
+        <Literal>B1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Buildings_1"/>
+        <Literal>Teaching Block</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Carreer_services_1"/>
+        <Literal>CS1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Carreer_services_1"/>
+        <Literal>Carreer and mentorship sessions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Class_schedule_1"/>
+        <Literal>CS1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Class_schedule_11"/>
+        <Literal>10:00am</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Classroom_Type_1"/>
+        <Literal>CL1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Classroom_Type_1"/>
+        <Literal>ABH 101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Clubs_1"/>
+        <Literal>CLB1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Clubs_1"/>
+        <Literal>Wildlife</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Conduct_Policies_1"/>
+        <Literal>COP1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Conduct_Policies_1"/>
+        <Literal>We embrace a CHAIR policy in all our dealings.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Counselling_1"/>
+        <Literal>CO1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Counselling_1"/>
+        <Literal>Mental wellness sessions</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Course_1"/>
+        <Literal>C1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Course_1"/>
+        <Literal>Data Structures</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Course_2"/>
+        <Literal>C2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Course_2"/>
+        <Literal>Web Development</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Emergency_Protocols_1"/>
+        <Literal>EP1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Emergency_Protocols_1"/>
+        <Literal>All private data should be kept private</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_Records_1"/>
+        <Literal>R1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_Records_1"/>
+        <Literal>General Employee records</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <Literal>EV1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Event_1"/>
+        <Literal>Alumni yearly get-together.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Exam_Schedule_1"/>
+        <Literal>ES1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Exam_Schedule_1"/>
+        <Literal>12:00pm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Expenses_1"/>
+        <Literal>EX1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Expenses_1"/>
+        <Literal>Travel expenses</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Facility_1"/>
+        <Literal>FA1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Facility_1"/>
+        <Literal>Whiteboard</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Feedback_1"/>
+        <Literal>FE1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Feedback_1"/>
+        <Literal>Feedback phone calls and emails.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Grade_1"/>
+        <Literal>G1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Grade_1"/>
+        <Literal>A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Grade_2"/>
+        <Literal>G2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Grade_2"/>
+        <Literal>B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#IT_equipment_1"/>
+        <Literal>IE1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#IT_equipment_1"/>
+        <Literal>Monitors</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Library_Membership_1"/>
+        <Literal>Membership For Library</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Library_Resource_1"/>
+        <Literal>LR1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Library_Resource_1"/>
+        <Literal>Structure and Settings</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Medical_Records_1"/>
+        <Literal>MR1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Medical_Records_1"/>
+        <Literal>Staff Medical Records</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Membership_1"/>
+        <Literal>LM1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Membership_1"/>
+        <Literal>ME1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Membership_1"/>
+        <Literal>Alumni membership requirements.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Notification_1"/>
+        <Literal>N1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Notification_1"/>
+        <Literal>Email Notifications</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Parent_1"/>
+        <Literal>P1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Parent_1"/>
+        <Literal>Clement Yooo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Parent_event_1"/>
+        <Literal>PE1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Parent_event_1"/>
+        <Literal>Annual General Meeting</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Partnership_Institution_1"/>
+        <Literal>PI1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Partnership_Institution_1"/>
+        <Literal>United Nations Habitat.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Payment_status_1"/>
+        <Literal>PS1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Payment_status_1"/>
+        <Literal>Fully paid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Recruitment_1"/>
+        <Literal>R1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Recruitment_1"/>
+        <Literal>Refferal Recruitment</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Route_1"/>
+        <Literal>P1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Route_1"/>
+        <Literal>Eastern Highway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#School_Bus_1"/>
+        <Literal>SB1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#School_Bus_1"/>
+        <Literal>Bus number 19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#School_event_1"/>
+        <Literal>SE1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#School_event_1"/>
+        <Literal>Interfaculty games</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Software_1"/>
+        <Literal>SW1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Software_1"/>
+        <Literal>Windows 11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Sport_1"/>
+        <Literal>SP1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Sport_1"/>
+        <Literal>Basketball</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Sport_Facilities_1"/>
+        <Literal>SF1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Sport_Facilities_1"/>
+        <Literal>Basket Ball Court</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Staff_1"/>
+        <Literal>St1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Staff_1"/>
+        <Literal>Godwin Wang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Staff_2"/>
+        <Literal>St2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Staff_2"/>
+        <Literal>Alfred Mcctominay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Student_1"/>
+        <Literal>S1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Student_1"/>
+        <Literal>Mark Twain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Student_2"/>
+        <Literal>S2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Student_2"/>
+        <Literal>Elvis Tylor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Subject_1"/>
+        <Literal>SU1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Subject_1"/>
+        <Literal>Neural Network</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Subject_2"/>
+        <Literal>SU2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Subject_2"/>
+        <Literal>React</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Teacher_1"/>
+        <Literal>T1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Teacher_1"/>
+        <Literal>Faith Clare</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Teacher_2"/>
+        <Literal>T2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Teacher_2"/>
+        <Literal>David Lawson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Type_of_fee_1"/>
+        <Literal>TOF1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Type_of_fee_1"/>
+        <Literal>Tuition fee</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Volunteer_Programs_1"/>
+        <Literal>VP1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Volunteer_Programs_1"/>
+        <Literal>City Cleaning exercises.</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EnrolledIn"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Teaches"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allocatesBidgetFor"/>
+        <Class IRI="#Financial_Management"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsPolicy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsRoute"/>
+        <Class IRI="#School_Bus"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFeedbackFrom"/>
+        <Class IRI="#Parent_Communication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
+        <Class IRI="#Fee_Management"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSchedule"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hostsEvent"/>
+        <Class IRI="#Facilities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAvailableFor"/>
+        <Class IRI="#Library_Resources"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEmployedFor"/>
+        <Class IRI="#Staff"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisedBy"/>
+        <Class IRI="#Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managesAdmissionsFor"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mentors"/>
+        <Class IRI="#Alumni_Network"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#offersInternshipsTo"/>
+        <Class IRI="#Career_Services"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatesSoftware"/>
+        <Class IRI="#Technology"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organizes"/>
+        <Class IRI="#Administration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partnersWith"/>
+        <Class IRI="#Community_Partnerships"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#providesCounsellingFor"/>
+        <Class IRI="#Student_Service"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Health_and_Safety"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sendsNotificationTo"/>
+        <Class IRI="#Parent_Communication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usesFacility"/>
+        <Class IRI="#Classroom"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EnrolledIn"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Teaches"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allocatesBidgetFor"/>
+        <Class IRI="#Expenses"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsPolicy"/>
+        <Class IRI="#Policies_and_Procedures"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsRoute"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFeedbackFrom"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
+        <Class IRI="#Payment_Status"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSchedule"/>
+        <Class IRI="#Class_Schedule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hostsEvent"/>
+        <Class IRI="#Event_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAvailableFor"/>
+        <Class IRI="#Library_Membership"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEmployedFor"/>
+        <Class IRI="#Facilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSupervisedBy"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#managesAdmissionsFor"/>
+        <Class IRI="#Admission"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mentors"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#offersInternshipsTo"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operatesSoftware"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organizes"/>
+        <Class IRI="#Event_Management"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#Extracurricular"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participatesIn"/>
+        <Class IRI="#School_Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partnersWith"/>
+        <Class IRI="#Partner_Institutions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#providesCounsellingFor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requires"/>
+        <Class IRI="#Emergency_Protocols"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sendsNotificationTo"/>
+        <Class IRI="#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usesFacility"/>
+        <Class IRI="#Facilities"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

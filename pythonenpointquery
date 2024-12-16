@@ -1,0 +1,140 @@
+from SPARQLWrapper import SPARQLWrapper, JSON
+
+
+# Initialize SPARQLWrapper
+sparql = SPARQLWrapper("http://localhost:3030/testing/query")
+sparql.setReturnFormat(JSON)
+
+# Function to map natural language to SPARQL query
+def generate_sparql_query(user_input):
+    user_input = user_input.lower()
+
+    if "how many teachers" in user_input or "list teachers" in user_input:
+        return """
+        PREFIX sch: <http://www.schools.com/ontology#>
+        SELECT ?teacher
+        WHERE {
+          ?teacher a <http://www.schools.com/ontology#Teacher> .
+        }
+        """
+    elif "how many students" in user_input and "enrolled in each course" in user_input:
+        return """
+        PREFIX sch: <http://www.schools.com/ontology#>
+        SELECT ?student ?course
+        WHERE {
+          ?student a <http://www.schools.com/ontology#Student> ;
+                   <http://www.schools.com/ontology#EnrolledIn> ?course .
+        }
+        """
+    elif "courses distributed among teachers" in user_input:
+        return """
+        PREFIX sch: <http://www.schools.com/ontology#>
+        SELECT ?course
+        WHERE {
+          ?teacher a <http://www.schools.com/ontology#Teacher> ;
+                   <http://www.schools.com/ontology#Teaches> ?course .
+        }
+        """
+    elif "list events organized by the school" in user_input:
+        return """
+        PREFIX sch: <http://www.schools.com/ontology#>
+        SELECT ?event
+        WHERE {
+          ?event a <http://www.schools.com/ontology#School_Event> .
+        }
+        """
+    elif "list members of each specific club" in user_input:
+        return """
+        PREFIX sch: <http://www.schools.com/ontology#>
+        SELECT ?member
+        WHERE {
+          ?member <http://www.schools.com/ontology#is_a_member_of> <http://www.schools.com/ontology#Computer_Club> .
+        }
+        """
+    elif "what subclasses does the class library have" in user_input:
+        return """
+        SELECT ?subclass WHERE {
+          ?subclass rdfs:subClassOf <http://www.schools.com/ontology#Library> .
+        }
+        """
+    elif "list all teachers that specialize in a particular field" in user_input:
+        return """
+        SELECT ?teacher WHERE {
+          ?teacher rdf:type <http://www.schools.com/ontology#Teacher> .
+          ?teacher <http://www.schools.com/ontology#Specialization> ?specialization .
+        }
+        """
+    elif "list all student conduct policies" in user_input:
+        return """
+        SELECT ?policy WHERE {
+          ?policy rdf:type <http://www.schools.com/ontology#Conduct_Policies> .
+        }
+        """
+    elif "list all named classes" in user_input:
+        return """
+        SELECT ?class WHERE {
+          ?class rdf:type owl:Class .
+        }
+        """
+    elif "list all individuals with hiredate" in user_input:
+        return """
+        SELECT ?individual WHERE {
+          ?individual <http://www.schools.com/ontology#HireDate> ?date .
+        }
+        """
+    elif "list all the classes and their associated subclasses" in user_input:
+        return """
+        SELECT ?class ?subclass WHERE {
+          ?subclass rdfs:subClassOf ?class .
+        }
+        """
+    elif "list all datatype properties from the ontology" in user_input:
+        return """
+        SELECT ?property WHERE {
+          ?property rdf:type owl:DatatypeProperty .
+        }
+        """
+    elif "find the range of the organizes property" in user_input:
+        return """
+        SELECT ?range WHERE {
+          <http://www.schools.com/ontology#organizes> rdfs:range ?range .
+        }
+        """
+    elif "all properties related to the fee" in user_input:
+        return """
+        SELECT ?property WHERE {
+          ?property rdfs:domain <http://www.schools.com/ontology#Fee_Management> .
+        }
+        """
+    elif "all students and associated information" in user_input:
+        return """
+        SELECT ?student ?info WHERE {
+          ?student rdf:type <http://www.schools.com/ontology#Student> .
+          OPTIONAL {
+            ?student ?property ?info .
+          }
+        }
+        """
+    else:
+        raise ValueError("Sorry, I couldn't understand your query. Please ask about specific topics like teachers, students, courses, or policies.")
+
+# Prompt user for a natural language query
+user_input = input("Please enter your query: ")
+
+# Attempt to generate and execute the SPARQL query
+try:
+    sparql_query = generate_sparql_query(user_input)
+    sparql.setQuery(sparql_query)
+
+    # Execute query
+    ret = sparql.queryAndConvert()
+
+    # Print results
+    for result in ret['results']['bindings']:
+        for key, value in result.items():
+            print(f"{key}: {value['value']}")
+
+except ValueError as ve:
+    print(ve)
+except Exception as e:
+    print("An error occurred:", e)
